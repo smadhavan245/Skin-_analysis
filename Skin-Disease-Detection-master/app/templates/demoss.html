@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCOS Detection Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="logo.png" alt="PCOS Detection Logo" class="logo">
+      <h2>PCOS Detection Login</h2>
+      <form action="/login" method="POST">
+        <div class="textbox">
+          <input type="email" placeholder="Email Address" name="email" required>
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+        <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        <div class="social-login">
+          <p>Or login with:</p>
+          <button class="google-btn">Google</button>
+          <button class="facebook-btn">Facebook</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .login-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+    }
+    .logo {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .textbox input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    .forgot-password, .signup-link {
+      margin-top: 10px;
+    }
+    .social-login p {
+      margin: 10px 0;
+    }
+    .google-btn, .facebook-btn {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .google-btn {
+      background: #DB4437;
+    }
+    .facebook-btn {
+      background: #4267B2;
+    }
+  </style>
+</body>
+</html>
